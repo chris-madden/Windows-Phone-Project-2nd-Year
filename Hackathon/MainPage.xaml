@@ -1,0 +1,225 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Hackathon.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <Color x:Key="ChelseaBlue">RoyalBlue</Color>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Large outer stackpanel-->
+        <StackPanel
+            Name="MainPageOuterStk"
+            Orientation="Vertical">
+
+            <!--***************************Stackpanel with menu button and title**********************************************-->
+            <StackPanel
+                Height="75"
+                Orientation="Horizontal">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                </StackPanel.Background>
+
+                <Button 
+                    x:Name="menuButton"
+                    Click="menuButton_Click" 
+                    BorderThickness="0"
+                    HorizontalAlignment="Left"
+                    Background="Transparent"
+                    Margin="0" 
+                    Width="75"
+                    Height="75" 
+                    Padding="0"
+                    UseLayoutRounding="True">
+
+                    <Image
+                        Source="/Images/menuImage.jpg"
+                        Width="50"
+                        Height="50" 
+                        Stretch="None"
+                      >
+
+                    </Image>
+
+                </Button>
+
+                <TextBlock 
+                    Margin="120,0,0,0"
+                    FontSize="36"
+                    VerticalAlignment="Center">
+                    
+                    Home
+
+                </TextBlock>
+
+            </StackPanel>
+            <!--**************************End of Stackpanel with menu button and title****************************************-->
+
+            <!--***************************Stackpanel Intro********************************************************************-->
+            <StackPanel 
+                Background="White"
+                Height="200">
+
+                <!--Bold title text-->
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    Margin="20,20,20,5"
+                    TextWrapping="Wrap" 
+                    LineHeight="6" FontSize="24" FontWeight="Bold">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                             
+                    Welcome to the unoffical Chelsea app
+                </TextBlock>
+
+                <!--Description of app-->
+                <TextBlock
+                    HorizontalAlignment="Center"
+                    Margin="20,20,20,20"
+                    TextWrapping="Wrap" 
+                    LineHeight="6">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                    
+                    
+                    Here you can check up first team and squad information, 
+                    browse through the trophy cabinet, check out Stamford Bridge and
+                    find out some facts you may not have known about Chelsea
+                </TextBlock>
+
+            </StackPanel>
+            <!--***********************End of Stackpanel Intro****************************************************************-->
+
+
+            <!--***********************Stackpanel text before picture****************************************************************-->
+            <StackPanel
+                Height ="490"
+                Background="White">
+
+                <TextBlock 
+                    Text="Up The Chels!"
+                    HorizontalAlignment="Center" 
+                    FontSize="24"
+                    FontWeight="Bold" Margin="0,25,0,0">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+
+                </TextBlock>
+
+
+                <Image 
+            		Source="/Images/chelseaHomePage.jpg"
+            		Width="450" 
+                    Margin="15,40,15,0" />
+
+
+            </StackPanel>
+            <!--*******************End of Stackpanel text before picture****************************************************************-->
+
+        </StackPanel>
+        <!--End of large outer stackpanel-->
+
+        <!--**********Grid containing the menu box which navigates to other pages*****************************************-->
+        <Grid 
+            	x:Name="MenuBox" 
+            	Margin="115,102,115,248" 
+            	Height="520"
+            	Width="250"
+                Visibility="Collapsed">
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+            </Grid.Background>
+
+            <Button 
+            		x:Name="homePage"
+            		Content="Home"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" Click="homePage_Click"/>
+
+            <Button 
+            		x:Name="trophyPage"
+            		Content="Trophies"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" 
+            		Click="trophyPage_Click"
+                    Margin="0,225,0,0"/>
+
+            <Button 
+            		x:Name="playersPage"
+            		Content="First Team"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top"
+                    BorderThickness="0,0,0,1"
+                    Click="playersPage_Click"
+                    Margin="0,75,0,0" />
+
+            <Button 
+            		x:Name="squadPage"
+            		Content="Squad"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,150,0,0" 
+                    Click="squadPage_Click"/>
+
+            <Button 
+            		x:Name="stamfordBridge"
+            		Content="Stamford Bridge"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,300,0,0"
+                    Click="stamfordBridge_Click"/>
+
+            <Button 
+            		x:Name="facts"
+            		Content="Facts"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,375,0,0" 
+                    Click="facts_Click"/>
+
+            <Button 
+            		x:Name="resources"
+            		Content="Resources"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,0" 
+                    Margin="0,450,0,0" Click="resources_Click"
+                    />
+            <!--*****End of menu grid*********************************************************************-->
+        </Grid>
+
+        <!--*****End of layout root grid**************************************************************-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

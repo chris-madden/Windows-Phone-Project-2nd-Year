@@ -1,0 +1,265 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Hackathon.StamfordBridge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <Color x:Key="ChelseaBlue">RoyalBlue</Color>
+    </phone:PhoneApplicationPage.Resources>
+
+    <ScrollViewer>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Large Outer Stackpanel-->
+        <StackPanel
+            Name="LargeTheBridgeStk"
+            Orientation="Vertical" 
+            >
+
+            <!--Stackpanel with Menu button and player textblock-->
+            <StackPanel
+                    Orientation="Horizontal">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                </StackPanel.Background>
+
+                <!--Menu button-->
+                <Button 
+                		x:Name="menuFromStamfordBridge"
+                		Height="75" 
+                		Margin="0"
+                		Width="75"
+                		HorizontalAlignment="Left" 
+                		VerticalAlignment="Top"
+                		Background="Blue" 
+                		BorderThickness="0"
+                        Padding="0" Click="menuFromStamfordBridge_Click"
+                        >
+
+                    <Image
+                        Source="/Images/menuImage.jpg"
+                        Width="50"
+                        Height="50" 
+                        Stretch="None">
+                    </Image>
+
+                </Button>
+
+                <!--Textbock with title Players-->
+                <TextBlock
+                		TextWrapping="Wrap"
+                		Text="The Bridge"
+                		HorizontalAlignment="Right" 
+                		VerticalAlignment="Center"
+                		Margin="90,0,0,0" 
+                		FontSize="36" 
+                		Foreground="White"/>
+
+            </StackPanel>
+
+            <!--Stackpanels with pictures -->
+                <StackPanel
+                    Orientation="Vertical"
+                    Background="BlanchedAlmond"
+                    Height="120"
+                   
+                    Margin="5">
+                    
+                    <Image 
+                        Source="\Images\AllSidesStamfordBridge.jpg"
+                        Stretch="Uniform">
+                        
+                        
+                    </Image>
+                    
+                </StackPanel>
+
+                <StackPanel
+                    Orientation="Vertical"
+                    Background="BlanchedAlmond"
+                    Height="350"
+                   
+                    Margin="5">
+
+                    <Image 
+                        Source="\Images\OutsideStamfordBridge.jpg"
+                        Stretch="Uniform">
+
+
+                    </Image>
+
+                 <!--End of Stackpanels with pictures -->
+                </StackPanel>
+
+                <StackPanel
+                    Height="200">
+
+                    <TextBlock HorizontalAlignment="Center" Margin="25,5,0,0" FontSize="24" FontWeight="Bold"
+                        >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </TextBlock.Foreground>
+                        
+                        Information
+
+                    </TextBlock>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" FontSize="20"
+                        >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </TextBlock.Foreground>
+                        
+                        Capacity: 41,629
+                               
+                    </TextBlock>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" FontSize="20"
+                        >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </TextBlock.Foreground>
+                        
+                        Location: South-West London
+
+                    </TextBlock>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" FontSize="20"
+                        >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </TextBlock.Foreground>
+                        
+                        Highest Official Attendence: 82,905 (1935)
+
+                    </TextBlock>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="25,10,0,0" FontSize="20"
+                        >
+                        <TextBlock.Foreground>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </TextBlock.Foreground>
+                        
+                        Opened: 28 April 1877
+
+                    </TextBlock>
+
+                </StackPanel>
+
+            </StackPanel>
+
+        <!--**********Grid containing the menu box which navigates to other pages*****************************************-->
+        <Grid 
+            	x:Name="MenuBoxTheBridge" 
+            	Margin="115,102,115,1354" 
+            	Height="520"
+            	Width="250"
+                Visibility="Collapsed">
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+            </Grid.Background>
+
+            <Button 
+            		x:Name="homePageBridge"
+            		Content="Home"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" 
+                    Click="homePageBridge_Click"
+                    />
+
+            <Button 
+            		x:Name="trophyPageBridge"
+            		Content="Trophies"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" 
+                    Margin="0,225,0,0" 
+                    Click="trophyPageBridge_Click" 
+                    />
+
+            <Button 
+            		x:Name="playersPageBridge"
+            		Content="First Team"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top"
+                    BorderThickness="0,0,0,1"
+                    Margin="0,75,0,0"
+                    Click="playersPageBridge_Click" 
+                    />
+
+            <Button 
+            		x:Name="squadPageBridge"
+            		Content="Squad"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,150,0,0" 
+                    Click="squadPageBridge_Click"  
+                    />
+
+            <Button 
+            		x:Name="stamfordBridgeBridge"
+            		Content="Stamford Bridge"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,300,0,0" 
+                    Click="stamfordBridgeBridge_Click" 
+                    />
+
+            <Button 
+            		x:Name="factsBridge"
+            		Content="Facts"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,375,0,0" 
+                    Click="factsBridge_Click" 
+                    />
+
+            <Button 
+            		x:Name="resourcesBridge"
+            		Content="Resources"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,0" 
+                    Margin="0,450,0,-5" Click="resourcesBridge_Click"
+                
+                    >
+
+                <Button.Background>
+                    <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                </Button.Background>
+            </Button>
+            <!--*****End of menu grid***********************************-->
+        </Grid>
+
+    </Grid>
+
+    </ScrollViewer>
+
+</phone:PhoneApplicationPage>

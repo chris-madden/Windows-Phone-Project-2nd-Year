@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>ACER</Machine>
+    <WindowsUser>User</WindowsUser>
+    <TargetPlatformIdentifier>Windows Phone</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>2ea869cf-94c6-42fa-bcad-5403dbafb6a9</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\User\Desktop\Hackathon\Hackathon\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\User\Desktop\Hackathon\Hackathon\Bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Bin\Debug\Hackathon.dll">
+      <PackagePath>Hackathon.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Phone\v8.1\Libraries\Microsoft.Phone.Controls.dll">
+      <PackagePath>Microsoft.Phone.Controls.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\AlignmentGrid.png">
+      <PackagePath>Assets\AlignmentGrid.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\ApplicationIcon.png">
+      <PackagePath>Assets\ApplicationIcon.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\BadgeLogo.png">
+      <PackagePath>Assets\BadgeLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\SquareTile150x150.png">
+      <PackagePath>Assets\SquareTile150x150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\SquareTile71x71.png">
+      <PackagePath>Assets\SquareTile71x71.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\WideLogo.png">
+      <PackagePath>Assets\WideLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\Tiles\FlipCycleTileLarge.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\Tiles\FlipCycleTileMedium.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileMedium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\Tiles\FlipCycleTileSmall.png">
+      <PackagePath>Assets\Tiles\FlipCycleTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\Tiles\IconicTileMediumLarge.png">
+      <PackagePath>Assets\Tiles\IconicTileMediumLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Assets\Tiles\IconicTileSmall.png">
+      <PackagePath>Assets\Tiles\IconicTileSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\oscar.png">
+      <PackagePath>Images\oscar.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\AllSidesStamfordBridge.jpg">
+      <PackagePath>Images\AllSidesStamfordBridge.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\azpilicueta.jpg">
+      <PackagePath>Images\azpilicueta.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\cech.jpg">
+      <PackagePath>Images\cech.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\championsLeagueTrophy.jpg">
+      <PackagePath>Images\championsLeagueTrophy.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\chelseaHomePage.jpg">
+      <PackagePath>Images\chelseaHomePage.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\costa.jpg">
+      <PackagePath>Images\costa.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\courtois200x200.jpg">
+      <PackagePath>Images\courtois200x200.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\drogba.jpg">
+      <PackagePath>Images\drogba.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\EdenHazard.jpg">
+      <PackagePath>Images\EdenHazard.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\fabregas.jpg">
+      <PackagePath>Images\fabregas.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\FACup.jpg">
+      <PackagePath>Images\FACup.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\garycahill.jpg">
+      <PackagePath>Images\garycahill.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\ivanovic.jpg">
+      <PackagePath>Images\ivanovic.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\jt.jpg">
+      <PackagePath>Images\jt.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\leagueCup.jpg">
+      <PackagePath>Images\leagueCup.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\leagueTrophy.jpg">
+      <PackagePath>Images\leagueTrophy.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\luis.jpg">
+      <PackagePath>Images\luis.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\Matic.jpg">
+      <PackagePath>Images\Matic.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\menuImage.jpg">
+      <PackagePath>Images\menuImage.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\mikel.jpg">
+      <PackagePath>Images\mikel.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\OutsideStamfordBridge.jpg">
+      <PackagePath>Images\OutsideStamfordBridge.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\ramires.jpg">
+      <PackagePath>Images\ramires.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\remy.jpg">
+      <PackagePath>Images\remy.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\Schurrle.jpg">
+      <PackagePath>Images\Schurrle.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\willian.jpg">
+      <PackagePath>Images\willian.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Images\Zouma.jpg">
+      <PackagePath>Images\Zouma.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\User\Desktop\Hackathon\Hackathon\Bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

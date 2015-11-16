@@ -1,0 +1,1187 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Hackathon.Players"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+    <phone:PhoneApplicationPage.Resources>
+        <Color x:Key="ChelseaBlue">RoyalBlue</Color>
+    </phone:PhoneApplicationPage.Resources>
+
+    <ScrollViewer>
+
+        <!--LayoutRoot is the root grid where all page content is placed-->
+        <Grid x:Name="LayoutRoot" Background="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <!--ContentPanel - place additional content here-->
+            <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+
+                <!--Large Outer Stackpanel-->
+                <StackPanel
+                    Name="LargePlayerStk"
+                    Background="White"
+                    Orientation="Vertical" 
+                    >
+
+                    <!--Stackpanel with Menu button and player textblock-->
+                    <StackPanel
+                    Orientation="Horizontal">
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </StackPanel.Background>
+
+                        <!--Menu button-->
+                        <Button 
+                		x:Name="menuFromPlayers"
+                		Height="75" 
+                		Margin="0"
+                		Width="75"
+                		HorizontalAlignment="Left" 
+                		VerticalAlignment="Top"
+                		Background="Blue" 
+                		BorderThickness="0"
+                        Padding="0" 
+                        Click="menuFromPlayers_Click">
+
+                            <Image
+                        Source="/Images/menuImage.jpg"
+                        Width="50"
+                        Height="50" 
+                        Stretch="None">
+                            </Image>
+
+                        </Button>
+
+                        <!--Textbock with title Players-->
+                        <TextBlock
+                		TextWrapping="Wrap"
+                		Text="First Team"
+                		HorizontalAlignment="Right" 
+                		VerticalAlignment="Center"
+                		Margin="100,0,0,0" 
+                		FontSize="36" 
+                		Foreground="White"/>
+
+                    </StackPanel>
+
+                    <!--Thibaut Coutois-->
+                    <StackPanel
+            		Height="150"
+            		Width="450"
+            		Margin="0,20,0,0"
+            		Orientation="Horizontal"
+                        >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            			Height="150"
+            			Width="200"
+            			HorizontalAlignment="Left"
+            			Orientation="Horizontal">
+
+                            <Image 
+            				Source="/Images/courtois200x200.jpg" 
+            				Width="200"
+                          />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            			Height="150"
+            			Width="260"
+            			Orientation="Vertical"
+            			HorizontalAlignment="Right">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Name: Thibaut Courtois" Foreground="White"/>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Position: Goalkeeper" Foreground="White"/>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Nationality: Belgian">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Age: 22">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Cesar Azpillicueta-->
+                    <StackPanel
+            		Height="150"
+            		Width="450"
+            		Margin="0,20,0,0"
+            		Orientation="Horizontal"
+                        >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            			Height="150"
+            			Width="200"
+            			HorizontalAlignment="Left"
+            			Orientation="Horizontal">
+
+                            <Image 
+            				Source="/Images/azpilicueta.jpg" 
+            				Width="200"
+                            Stretch="UniformToFill"
+                          />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            			Height="150"
+            			Width="260"
+            			Orientation="Vertical"
+            			HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Name: César Azpilicueta">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Position: Defender">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Nationality: Spanish">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Age: 25">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--John Terry-->
+                    <StackPanel
+            		Height="150"
+            		Width="450"
+            		Margin="0,20,0,0"
+            		Orientation="Horizontal"
+                        >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            			Height="150"
+            			Width="200"
+            			HorizontalAlignment="Left"
+            			Orientation="Horizontal">
+
+                            <Image 
+            				Source="/Images/jt.jpg" 
+            				Width="200"
+                          />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            			Height="150"
+            			Width="260"
+            			Orientation="Vertical"
+            			HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Name: John Terry">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Position: Defender">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Nationality: English">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Age: 34">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Gary Cahill-->
+                    <StackPanel
+            		Height="150"
+            		Width="450"
+            		Margin="0,20,0,0"
+            		Orientation="Horizontal"
+                        >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            			Height="150"
+            			Width="200"
+            			HorizontalAlignment="Left"
+            			Orientation="Horizontal">
+
+                            <Image 
+            				Source="/Images/garycahill.jpg" 
+            				Width="200"
+                          />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            			Height="150"
+            			Width="260"
+            			Orientation="Vertical"
+            			HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Name: Gary Cahill">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Position: Defender">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Nationality: English">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            				<Run Text="Age: 29">
+            					<Run.Foreground>
+            						<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            					</Run.Foreground>
+            				</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Branislav Ivanovic-->
+                    <StackPanel
+            	Height="150"
+            	Width="450"
+            	Margin="0,20,0,0"
+            	Orientation="Horizontal"
+                    >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            	Height="150"
+            	Width="200"
+            	HorizontalAlignment="Left"
+            	Orientation="Horizontal">
+
+                            <Image 
+            	    Source="/Images/ivanovic.jpg" 
+            	    Width="200"
+                    />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            		Height="150"
+            		Width="260"
+            		Orientation="Vertical"
+            		HorizontalAlignment="Right" 
+                    Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Name: Branislav Ivanović">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Position: Defender">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Nationality: Serbian">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Age: 29">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Nemanja Matic-->
+                    <StackPanel
+            	Height="150"
+            	Width="450"
+            	Margin="0,20,0,0"
+            	Orientation="Horizontal"
+                    >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            	        Height="150"
+            	        Width="200"
+            	        HorizontalAlignment="Left"
+            	        Orientation="Horizontal">
+
+                            <Image 
+            	    Source="/Images/Matic.jpg" 
+            	    Width="200"
+                    />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            		Height="150"
+            		Width="260"
+            		Orientation="Vertical"
+            		HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Name: Nemanja Matić">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Position: Midfielder">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Nationality: Serbian">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Age: 26">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Cesc Fabregas-->
+                    <StackPanel
+            	Height="150"
+            	Width="450"
+            	Margin="0,20,0,0"
+            	Orientation="Horizontal"
+                    >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            	        Height="150"
+            	        Width="200"
+            	        HorizontalAlignment="Left"
+            	        Orientation="Horizontal">
+
+                            <Image 
+            	    Source="/Images/fabregas.jpg" 
+            	    Width="200"
+                    />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            		Height="150"
+            		Width="260"
+            		Orientation="Vertical"
+            		HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Name: Cesc Fàbregas">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Position: Midfielder">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Nationality: Spanish">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Age: 27">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Oscar-->
+                    <StackPanel
+            	Height="150"
+            	Width="450"
+            	Margin="0,20,0,0"
+            	Orientation="Horizontal"
+                    >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            	        Height="150"
+            	        Width="200"
+            	        HorizontalAlignment="Left"
+            	        Orientation="Horizontal">
+
+                            <Image 
+            	    Source="/Images/oscar.png" 
+            	    Width="200"
+                    />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            		Height="150"
+            		Width="260"
+            		Orientation="Vertical"
+            		HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Name: Oscar">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Position: Midfielder">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Nationality: Brazilian ">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Age: 23">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Eden Hazard-->
+                    <StackPanel
+            	Height="150"
+            	Width="450"
+            	Margin="0,20,0,0"
+            	Orientation="Horizontal"
+                    >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            	        Height="150"
+            	        Width="200"
+            	        HorizontalAlignment="Left"
+            	        Orientation="Horizontal">
+
+                            <Image 
+            	    Source="/Images/EdenHazard.jpg" 
+            	    Width="200"
+                    />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            		Height="150"
+            		Width="260"
+            		Orientation="Vertical"
+            		HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Name: Eden Hazard">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Position: Midfielder">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Nationality: Belgian">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Age: 23">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Willian-->
+                    <StackPanel
+            	    Height="150"
+            	    Width="450"
+            	    Margin="0,20,0,0"
+            	    Orientation="Horizontal"
+                    >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            	        Height="150"
+            	        Width="200"
+            	        HorizontalAlignment="Left"
+            	        Orientation="Horizontal">
+
+                            <Image 
+            	    Source="/Images/willian.jpg" 
+            	    Width="200"
+                    />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            		Height="150"
+            		Width="260"
+            		Orientation="Vertical"
+            		HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Name: Willian">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Position: Midfielder">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Nationality: Brazilian">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Age: 26">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <!--Diego Costa-->
+                    <StackPanel
+            	    Height="150"
+            	    Width="450"
+            	    Margin="0,20,0,0"
+            	    Orientation="Horizontal"
+                    >
+
+                        <!--Stackpanel holding picture-->
+                        <StackPanel
+            	        Height="150"
+            	        Width="200"
+            	        HorizontalAlignment="Left"
+            	        Orientation="Horizontal">
+
+                            <Image 
+            	    Source="/Images/costa.jpg" 
+            	    Width="200"
+                    />
+
+                        </StackPanel>
+
+                        <!--Stackpanel holding text-->
+                        <StackPanel
+            		Height="150"
+            		Width="260"
+            		Orientation="Vertical"
+            		HorizontalAlignment="Right" Margin="0">
+                            <StackPanel.Background>
+                                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                            </StackPanel.Background>
+
+                            <TextBlock Margin="20,20,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Name: Diego Costa">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Position: Striker">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Nationality: Spanish ">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                            <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                                <TextBlock.Foreground>
+                                    <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                                </TextBlock.Foreground>
+                            
+            			<Run Text="Age: 26">
+            				<Run.Foreground>
+            					<SolidColorBrush Color="{StaticResource PhoneButtonBasePressedForegroundColor}"/>
+            				</Run.Foreground>
+            			</Run>
+
+                            </TextBlock>
+
+                        </StackPanel>
+
+                    </StackPanel>
+
+
+                    <!--End of large Stackpanel-->
+                </StackPanel>
+
+                <!--**********Grid containing the menu box which navigates to other pages*****************************************-->
+                <Grid 
+            	x:Name="MenuBoxPlayers" 
+            	Margin="115,102,115,1354" 
+            	Height="520"
+            	Width="250"
+                Visibility="Collapsed">
+                    <Grid.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </Grid.Background>
+
+                    <Button 
+            		x:Name="homePagePlayers"
+            		Content="Home"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1"
+                    Click="homePagePlayers_Click"/>
+
+                    <Button 
+            		x:Name="trophyPagePlayers"
+            		Content="Trophies"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" 
+                    Margin="0,225,0,0" 
+                    Click="trophyPagePlayers_Click"/>
+
+                    <Button 
+            		x:Name="playersPagePlayers"
+            		Content="First Team"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top"
+                    BorderThickness="0,0,0,1"
+                    Margin="0,75,0,0" 
+                    Click="playersPagePlayers_Click" />
+
+                    <Button 
+            		x:Name="squadPagePlayers"
+            		Content="Squad"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,150,0,0" 
+                    Click="squadPagePlayers_Click"/>
+
+                    <Button 
+            		x:Name="stamfordBridgePlayers"
+            		Content="Stamford Bridge"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,300,0,0"
+                    Click="stamfordBridgePlayers_Click"/>
+
+                    <Button 
+            		x:Name="factsPlayers"
+            		Content="Facts"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,375,0,0" Click="factsPlayers_Click"/>
+
+                    <Button 
+            		x:Name="resourcesPlayers"
+            		Content="Resources"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,0" 
+                    Margin="0,450,0,-5"
+                    Click="resourcesPlayers_Click"
+                        >
+                        <Button.Background>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </Button.Background>
+                    </Button>
+                    <!--*****End of menu grid*********************************************************************-->
+                </Grid>
+
+
+                <!--End of Content Panel Grid-->
+            </Grid>
+
+            
+
+            <!--Layout Root Grid-->
+        </Grid>
+
+    </ScrollViewer>
+
+</phone:PhoneApplicationPage>

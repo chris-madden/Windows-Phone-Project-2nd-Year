@@ -1,0 +1,249 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Hackathon.Facts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <Color x:Key="ChelseaBlue">RoyalBlue</Color>
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Large Outer Stackpanel-->
+        <StackPanel
+                    Name="LargeFactStk"
+                    Orientation="Vertical" 
+                    >
+
+            <!--Stackpanel with Menu button and player textblock-->
+            <StackPanel
+                    Orientation="Horizontal">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                </StackPanel.Background>
+
+
+                <!--Menu button-->
+                <Button 
+                		x:Name="menuFromFacts"
+                		Height="75" 
+                		Margin="0"
+                		Width="75"
+                		HorizontalAlignment="Left" 
+                		VerticalAlignment="Top"
+                		Background="Blue" 
+                		BorderThickness="0"
+                        Padding="0"
+                        Click="menuFromFacts_Click" 
+                        >
+
+                    <Image
+                        Source="/Images/menuImage.jpg"
+                        Width="50"
+                        Height="50" 
+                        Stretch="None">
+                    </Image>
+
+                </Button>
+
+                <!--Textbock with title Players-->
+                <TextBlock
+                		TextWrapping="Wrap"
+                		Text="Facts"
+                		HorizontalAlignment="Right" 
+                		VerticalAlignment="Center"
+                		Margin="130,0,0,0" 
+                		FontSize="36" 
+                		Foreground="White"/>
+
+            </StackPanel>
+
+            <!--Stackpanel containing facts-->
+            <StackPanel
+                Height="690"
+                Orientation="Vertical"
+                Margin="0,0,0,203" 
+                Grid.Row="1"
+                >
+
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Margin="10,20,10,10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                     Chelsea hold the record for most points gained in a premiership season (95)
+                </TextBlock>
+
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Margin="10,19,10,10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                     Chelsea have conceeded the fewest goals in a premiership season (15)
+                </TextBlock>
+
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Margin="10,19,10,10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                     Ron Harris has more appearances than any other chelsea player (795)
+                </TextBlock>
+
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Margin="10,19,10,10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                     In the 1997-98 season Chelsea played a match that was 100 miles 
+                     into the arctic circle against Tromso which they lost 3-2
+                </TextBlock>
+
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Margin="10,19,10,10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                     The Chelsea mascot is a lion taken from the Chelsea crest, his name Stamford The Lion and 
+                     the costume was stolen by 2 men in 2005
+                </TextBlock>
+
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Margin="10,19,10,10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                    Chelsea hold a European record with their 21-0 aggregate win 
+                    over Jeunesse Hautcharage in the Cup Winners Cup in 1971
+                </TextBlock>
+
+                <TextBlock
+                    TextWrapping="Wrap"
+                    Margin="10,19,10,10">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                   Before 1905 Stamford Bridge wasn't a football ground it was 
+                   actually an athletics ground
+                </TextBlock>
+
+                <!--End of stackpanel containing facts-->
+            </StackPanel>
+
+        </StackPanel>
+
+        <!--**********Grid containing the menu box which navigates to other pages*****************************************-->
+        <Grid 
+            	x:Name="MenuBoxFacts" 
+            	Margin="115,102,115,1354" 
+            	Height="520"
+            	Width="250"
+                Visibility="Collapsed">
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+            </Grid.Background>
+
+            <Button 
+            		x:Name="homePageFacts"
+            		Content="Home"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1"
+                    Click="homePageFacts_Click"/>
+
+            <Button 
+            		x:Name="trophyPageFacts"
+            		Content="Trophies"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" 
+                    Margin="0,225,0,0" 
+                    Click="trophyPageFacts_Click"/>
+
+            <Button 
+            		x:Name="playersPageFacts"
+            		Content="First Team"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top"
+                    BorderThickness="0,0,0,1"
+                    Margin="0,75,0,0"
+                    Click="playersPageFacts_Click"/>
+
+            <Button 
+            		x:Name="squadPageFacts"
+            		Content="Squad"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,150,0,0" 
+                    Click="squadPageFacts_Click" 
+                    />
+
+            <Button 
+            		x:Name="stamfordBridgeFacts"
+            		Content="Stamford Bridge"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,300,0,0" 
+                    Click="stamfordBridgeFacts_Click"
+                    />
+
+            <Button 
+            		x:Name="factsFacts"
+            		Content="Facts"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,375,0,0" 
+                    Click="factsFacts_Click"
+                    />
+
+            <Button 
+            		x:Name="resourcesFacts"
+            		Content="Resources"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,0" 
+                    Margin="0,450,0,-5" Click="resourcesFacts_Click"
+                    >
+
+                <Button.Background>
+                    <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                </Button.Background>
+            </Button>
+            <!--*****End of menu grid***********************************-->
+        </Grid>
+
+    <!--End of LayoutRoot Grid-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

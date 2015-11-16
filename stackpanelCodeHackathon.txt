@@ -1,0 +1,219 @@
+     <Grid
+                Background="Aqua"
+                Height="180"
+                Width="420"
+                VerticalAlignment="Top"
+                Margin="0,100,0,0">
+
+                <Image 
+            		Source="/Images/PremierLeagueTrophy.jpg" 
+            		Height="180"
+            		Width="145"
+            		HorizontalAlignment="Left"/>
+
+                <StackPanel 
+                    Height="180"
+                    Width="285"
+            		x:Name="JohnTerry"
+            		Orientation="Vertical"
+                    HorizontalAlignment="Right"
+            		Background="White">
+                    
+                    <TextBlock 
+                        Width="285"
+                        Text="Name: John Terry"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="0,20"
+                        FontSize="25"
+                        VerticalAlignment="Top">                 
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="285"
+                        Text="Position: Defender"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="5,10"
+                        FontSize="25"
+                        VerticalAlignment="Top">
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="200"
+                        Text="Age: 33"
+                        Foreground="Black"
+                        TextAlignment="Left"
+                        FontSize="25"
+                        VerticalAlignment="Top"
+                        Margin="0,10">
+                    </TextBlock>
+                    
+                </StackPanel>
+
+            </Grid>
+
+            <Grid
+                Background="Aqua"
+                Height="180"
+                Width="420"
+                VerticalAlignment="Top"
+                Margin="18,320,18,0">
+
+                <Image 
+            		Source="/Images/PremierLeagueTrophy.jpg" 
+            		Height="180"
+            		Width="145"
+            		HorizontalAlignment="Left"/>
+
+                <StackPanel 
+                    Height="180"
+                    Width="285"
+            		x:Name="GaryCahill"
+            		Orientation="Vertical"
+                    HorizontalAlignment="Right"
+            		Background="White">
+
+                    <TextBlock 
+                        Width="285"
+                        Text="Name: Gary Cahill"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="0,20"
+                        FontSize="25"
+                        VerticalAlignment="Top">
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="285"
+                        Text="Position: Defender"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="5,10"
+                        FontSize="25"
+                        VerticalAlignment="Top">
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="200"
+                        Text="Age: 28"
+                        Foreground="Black"
+                        TextAlignment="Left"
+                        FontSize="25"
+                        VerticalAlignment="Top"
+                        Margin="0,10">
+                    </TextBlock>
+
+                </StackPanel>
+
+            </Grid>
+
+            <Grid
+                Background="Aqua"
+                Height="180"
+                Width="420"
+                VerticalAlignment="Top"
+                Margin="18,544,18,0">
+
+                <Image 
+            		Source="/Images/PremierLeagueTrophy.jpg" 
+            		Height="180"
+            		Width="145"
+            		HorizontalAlignment="Left"/>
+
+                <StackPanel 
+                    Height="180"
+                    Width="285"
+            		x:Name="BranislavIvanovic"
+            		Orientation="Vertical"
+                    HorizontalAlignment="Right"
+            		Background="White">
+
+                    <TextBlock 
+                        Width="285"
+                        Text="Name: Branislav Ivanovic"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="0,20"
+                        FontSize="25"
+                        VerticalAlignment="Top">
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="285"
+                        Text="Position: Defender"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="5,10"
+                        FontSize="25"
+                        VerticalAlignment="Top">
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="200"
+                        Text="Age: 30"
+                        Foreground="Black"
+                        TextAlignment="Left"
+                        FontSize="25"
+                        VerticalAlignment="Top"
+                        Margin="0,10">
+                    </TextBlock>
+
+                </StackPanel>
+
+            </Grid>
+
+            <Grid
+                Background="Aqua"
+                Height="180"
+                Width="420"
+                VerticalAlignment="Top"
+                Margin="18,742,18,-154">
+
+                <Image 
+            		Source="/Images/PremierLeagueTrophy.jpg" 
+            		Height="180"
+            		Width="145"
+            		HorizontalAlignment="Left"/>
+
+                <StackPanel 
+                    Height="180"
+                    Width="285"
+            		x:Name="CescFabregas"
+            		Orientation="Vertical"
+                    HorizontalAlignment="Right"
+            		Background="White">
+
+                    <TextBlock 
+                        Width="285"
+                        Text="Name: Cesc Fabregas"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="0,20"
+                        FontSize="25"
+                        VerticalAlignment="Top">
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="285"
+                        Text="Position: Midfield"
+                        Foreground="Black"
+                        TextAlignment="Center"
+                        Margin="5,10"
+                        FontSize="25"
+                        VerticalAlignment="Top">
+                    </TextBlock>
+
+                    <TextBlock 
+                        Width="200"
+                        Text="Age: 27"
+                        Foreground="Black"
+                        TextAlignment="Left"
+                        FontSize="25"
+                        VerticalAlignment="Top"
+                        Margin="0,10">
+                    </TextBlock>
+
+                </StackPanel>
+
+            </Grid>

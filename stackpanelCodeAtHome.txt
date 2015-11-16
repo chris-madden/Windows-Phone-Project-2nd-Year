@@ -1,0 +1,82 @@
+ <!--Large Outer Stackpanel-->
+                <StackPanel
+                    Background="Brown"
+                    Orientation="Vertical">
+
+                    <!--Outer stackpanel holding picture and text-->
+                    <StackPanel
+                        Background="Black"
+                        Height="200"
+                        Width="480"
+                        Margin="0,100,0,0"
+                        Orientation="Horizontal"
+                        >
+
+                        <!--Stackpanel holding picture-->
+                    <StackPanel
+                                Height="200"
+                                Width="200"
+                                Background="Aqua"
+                                HorizontalAlignment="Left"
+                                Orientation="Horizontal">
+
+                        <Image 
+            		        Source="/Images/courtois200x200.jpg" 
+                            Width="200"
+                            Stretch="Fill"/>
+
+                    </StackPanel>
+
+                    <!--Stackpanel holding text-->
+                    <StackPanel
+                            Background="Yellow"
+                            Height="200"
+                            Width="260"
+                            Orientation="Vertical"
+                            HorizontalAlignment="Right">
+
+                        <TextBlock Margin="20,40,0,10" FontSize="16">
+
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                            </TextBlock.Foreground>
+                            
+                            Name: Thibaut Courtois
+
+                        </TextBlock>
+
+                        <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                            </TextBlock.Foreground>
+                            
+                            Position: Goalkeeper
+
+                        </TextBlock>
+
+                        <TextBlock Margin="20,0,0,10" FontSize="16">
+
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                            </TextBlock.Foreground>
+                            
+                            Nationality: Belgian
+
+                        </TextBlock>
+
+                        <TextBlock Margin="20,0,0,0" FontSize="16">
+
+                            <TextBlock.Foreground>
+                                <SolidColorBrush Color="{StaticResource PhoneBackgroundColor}"/>
+                            </TextBlock.Foreground>
+                            
+                            Age: 22
+
+                        </TextBlock>
+                        
+                    </StackPanel>
+
+                </StackPanel>
+                    
+                </StackPanel>

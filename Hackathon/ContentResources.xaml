@@ -1,0 +1,614 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Hackathon.ContentResources"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.Resources>
+        <Color x:Key="ChelseaBlue">RoyalBlue</Color>
+    </phone:PhoneApplicationPage.Resources>
+
+    <ScrollViewer>
+    
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Large Outer Stackpanel-->
+        <StackPanel
+            Name="LargeResourcesStk"
+            Orientation="Vertical" 
+            >
+
+            <!--Stackpanel with Menu button and player textblock-->
+            <StackPanel
+                    Orientation="Horizontal">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                </StackPanel.Background>
+
+                <!--Menu button-->
+                <Button 
+                		x:Name="menuFromResources"
+                		Height="75" 
+                		Margin="0"
+                		Width="75"
+                		HorizontalAlignment="Left" 
+                		VerticalAlignment="Top"
+                		Background="Blue" 
+                		BorderThickness="0"
+                        Padding="0" Click="menuFromResources_Click" 
+                        
+                        >
+
+                    <Image
+                        Source="/Images/menuImage.jpg"
+                        Width="50"
+                        Height="50" 
+                        Stretch="None">
+                    </Image>
+
+                </Button>
+
+                <!--Textbock with title Players-->
+                <TextBlock
+                		TextWrapping="Wrap"
+                		Text="Resources"
+                		HorizontalAlignment="Right" 
+                		VerticalAlignment="Center"
+                		Margin="90,0,0,0" 
+                		FontSize="36" 
+                		Foreground="White"/>
+
+            </StackPanel>
+
+            <!--Stackpanels information-->
+            <StackPanel
+                Height="75" >
+
+                <TextBlock Margin="0,23,0,0" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24">
+                    <TextBlock.Foreground>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </TextBlock.Foreground>
+                    References To Pictures
+                </TextBlock>
+
+            </StackPanel>
+
+            <!--Stackpanel with Links-->
+            <StackPanel
+                Height="1150">
+
+                <!--www.football.co.uk-->
+                <StackPanel
+                    Height="50" Margin="0,0,0,25">
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                            NavigateUri="http://www.football.co.uk/" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                www.football.co.uk
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--www.chelseaitalia.com-->
+                <StackPanel
+                    Height="50" Margin="0,0,0,25">
+                    
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+                    
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                            NavigateUri="http://www.chelseaitalia.com/" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                www.chelseaitalia.com
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--www.pinterest.com-->
+                <StackPanel
+                    Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                            NavigateUri="http://www.pinterest.com/" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                www.pinterest.com
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://cm.dolce-sport.ro/-->
+                <StackPanel
+                    Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                            NavigateUri="http://cm.dolce-sport.ro/" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                cm.dolce-sport.ro
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://testy.nanic.cz/?k=sportovni-->
+                <StackPanel
+                    Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                            NavigateUri="http://testy.nanic.cz/?k=sportovni" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                testy.nanic.cz
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://ceelhuur.net/-->
+                <StackPanel
+                    Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                            NavigateUri="http://ceelhuur.net/" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                ceelhuur.net
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://gool.net/-->
+                <StackPanel
+                    Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                            NavigateUri="http://gool.net/" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                gool.net
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://naijadiary.blogspot.ie/-->
+                    <StackPanel
+                    Height="50" Margin="0,0,0,25">
+
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </StackPanel.Background>
+
+                        <!--Hyperlinks to picture refernces-->
+                        <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                            <Paragraph>
+                                <Hyperlink 
+                            NavigateUri="http://naijadiary.blogspot.ie/" 
+                            TargetName="_blank" 
+                            Foreground="White"  
+                            >
+
+                                    naijadiary.blogspot.ie
+
+                                </Hyperlink>
+                            </Paragraph>
+                        </RichTextBox>
+
+                    </StackPanel>
+
+                <!--http://www.canaries.co.uk/-->
+                <StackPanel
+                Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                HorizontalAlignment="Left" 
+                Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                        NavigateUri="http://www.canaries.co.uk/" 
+                        TargetName="_blank" 
+                        Foreground="White"  
+                        >
+
+                                www.canaries.co.uk
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://www.berbol.com/tag/willian-->
+                <StackPanel
+                Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                HorizontalAlignment="Left" 
+                Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                        NavigateUri="http://www.berbol.com/tag/willian" 
+                        TargetName="_blank" 
+                        Foreground="White"  
+                        >
+
+                                www.berbol.com
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://www.bundesliga.com-->
+                <StackPanel
+                Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                HorizontalAlignment="Left" 
+                Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                        NavigateUri="http://www.bundesliga.com/en/" 
+                        TargetName="_blank" 
+                        Foreground="White"  
+                        >
+
+                                www.bundesliga.com
+
+                            </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://www.singlelinkmagonline.com/-->
+                <StackPanel
+                Height="50" Margin="0,0,0,25">
+
+                    <StackPanel.Background>
+                        <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                    </StackPanel.Background>
+
+                    <!--Hyperlinks to picture refernces-->
+                    <RichTextBox
+                HorizontalAlignment="Left" 
+                Margin="25,10,0,0">
+
+                        <Paragraph>
+                            <Hyperlink 
+                    NavigateUri="http://www.singlelinkmagonline.com/" 
+                    TargetName="_blank" 
+                    Foreground="White"  
+                    >
+
+                                    www.singlelinkmagonline.com
+
+                                </Hyperlink>
+                        </Paragraph>
+                    </RichTextBox>
+
+                </StackPanel>
+
+                <!--http://www.myfootballfacts.com/-->
+                <StackPanel
+                     Height="50" Margin="0,0,0,25">
+
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </StackPanel.Background>
+
+                        <!--Hyperlinks to picture refernces-->
+                        <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                            <Paragraph>
+                                <Hyperlink 
+                    NavigateUri="http://www.myfootballfacts.com/" 
+                    TargetName="_blank" 
+                    Foreground="White"  
+                    >
+
+                                    www.myfootballfacts.com
+
+                                </Hyperlink>
+                            </Paragraph>
+                        </RichTextBox>
+
+                    </StackPanel>
+
+                <!--http://www.smh.com.au/-->
+                <StackPanel
+                     Height="50" Margin="0,0,0,25">
+
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </StackPanel.Background>
+
+                        <!--Hyperlinks to picture refernces-->
+                        <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                            <Paragraph>
+                                <Hyperlink 
+                    NavigateUri="http://www.smh.com.au/" 
+                    TargetName="_blank" 
+                    Foreground="White"  
+                    >
+
+                                    www.smh.com.au
+
+                                </Hyperlink>
+                            </Paragraph>
+                        </RichTextBox>
+
+                    </StackPanel>
+
+                <!--http://www.zimbio.com/-->
+                <StackPanel
+                     Height="50" Margin="0,0,0,25">
+
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                        </StackPanel.Background>
+
+                        <!--Hyperlinks to picture refernces-->
+                        <RichTextBox
+                    HorizontalAlignment="Left" 
+                    Margin="25,10,0,0">
+
+                            <Paragraph>
+                                <Hyperlink 
+                    NavigateUri="http://www.zimbio.com/" 
+                    TargetName="_blank" 
+                    Foreground="White"  
+                    >
+
+                                    www.zimbio.com
+
+                                </Hyperlink>
+                            </Paragraph>
+                        </RichTextBox>
+
+                    </StackPanel>
+
+
+                </StackPanel>
+
+        </StackPanel>
+
+        <!--**********Grid containing the menu box which navigates to other pages*****************************************-->
+        <Grid 
+            	x:Name="MenuBoxResources" 
+            	Margin="115,102,115,1354" 
+            	Height="520"
+            	Width="250"
+                Visibility="Collapsed">
+            <Grid.Background>
+                <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+            </Grid.Background>
+
+            <Button 
+            		x:Name="homePageResources"
+            		Content="Home"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" 
+                    Click="homePageResources_Click" 
+                    />
+
+            <Button 
+            		x:Name="trophyPageResources"
+            		Content="Trophies"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+            		BorderThickness="0,0,0,1" 
+                    Margin="0,225,0,0" 
+                    Click="trophyPageResources_Click" 
+                    />
+
+            <Button 
+            		x:Name="playersPageResources"
+            		Content="First Team"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top"
+                    BorderThickness="0,0,0,1"
+                    Margin="0,75,0,0" 
+                    Click="playersPageResources_Click" 
+                    />
+
+            <Button 
+            		x:Name="squadPageResources"
+            		Content="Squad"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,150,0,0" 
+                    Click="squadPageResources_Click"  
+                    />
+
+            <Button 
+            		x:Name="stamfordBridgeResources"
+            		Content="Stamford Bridge"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,300,0,0"
+                    Click="stamfordBridgeResources_Click" 
+                    />
+
+            <Button 
+            		x:Name="factsResources"
+            		Content="Facts"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,1" 
+                    Margin="0,375,0,0" 
+                    Click="factsResources_Click"  
+                    />
+
+            <Button 
+            		x:Name="resourcesResources"
+            		Content="Resources"
+            		Height="75"
+            		Width="250"
+            		VerticalAlignment="Top" 
+                    BorderThickness="0,0,0,0" 
+                    Margin="0,450,0,-5" Click="resourcesResources_Click"          
+                    >
+
+                <Button.Background>
+                    <SolidColorBrush Color="{StaticResource ChelseaBlue}"/>
+                </Button.Background>
+            </Button>
+            <!--*****End of menu grid***********************************-->
+        </Grid>
+
+    </Grid>
+
+    </ScrollViewer>
+
+</phone:PhoneApplicationPage>

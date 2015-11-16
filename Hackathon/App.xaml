@@ -1,0 +1,89 @@
+﻿<Application
+    x:Class="Hackathon.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone">
+
+    <!--Application Resources-->
+    <Application.Resources>
+        <local:LocalizedStrings xmlns:local="clr-namespace:Hackathon" x:Key="LocalizedStrings"/>
+        
+        <DataTemplate x:Key="PremierLeague">  
+            <Grid>
+                
+                <ContentPresenter>
+
+                    <TextBlock Text="{Binding}" Foreground="#FF4169E1" FontSize="50" HorizontalAlignment="Center"  Margin="15, 10, 0, 0"/>
+                
+                </ContentPresenter>
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ChampionsLeague">
+            <Grid>
+
+                <ContentPresenter>
+
+                    <TextBlock Text="{Binding}" Foreground="#FF4169E1" FontSize="50" HorizontalAlignment="Center"  Margin="0, 10, 0, 0"/>
+
+                </ContentPresenter>
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="FACup">
+            <Grid>
+
+                <ContentPresenter>
+
+                    <TextBlock Text="{Binding}" Foreground="#FF4169E1" FontSize="50" HorizontalAlignment="Center"  Margin="120, 10, 0, 0"/>
+
+                </ContentPresenter>
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="LeagueCup">
+            <Grid>
+
+                <ContentPresenter>
+                    
+                    <StackPanel>
+                        
+                        <TextBlock Text="{Binding}" Foreground="#FF4169E1" FontSize="50" HorizontalAlignment="Center"  Margin="65, 10, 0, 0" />
+                        
+                    </StackPanel>
+                    
+                </ContentPresenter>
+
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="OtherTrophies">
+            <Grid>
+
+                <ContentPresenter>
+
+                    <StackPanel>
+
+                        <TextBlock Text="{Binding}" Foreground="#FF4169E1" FontSize="50" HorizontalAlignment="Center"  Margin="45, 10, 0, 0" />
+
+                    </StackPanel>
+
+                </ContentPresenter>
+
+            </Grid>
+        </DataTemplate>
+
+    </Application.Resources>
+
+    <Application.ApplicationLifetimeObjects>
+        <!--Required object that handles lifetime events for the application-->
+        <shell:PhoneApplicationService
+            Launching="Application_Launching" Closing="Application_Closing"
+            Activated="Application_Activated" Deactivated="Application_Deactivated"/>
+    </Application.ApplicationLifetimeObjects>
+
+</Application>
